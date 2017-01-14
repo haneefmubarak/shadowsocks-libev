@@ -1775,7 +1775,7 @@ main(int argc, char **argv)
         server_host[server_num++] = NULL;
     }
 
-    if (server_num == 0 || server_port == NULL || password == NULL) {
+    if (server_num <= 0 || server_port == NULL || password == NULL) {
         usage();
         exit(EXIT_FAILURE);
     }
