@@ -1589,7 +1589,7 @@ main(int argc, char **argv)
     char tmp_port[8];
 
     int server_num = 0;
-    const char *server_host[MAX_REMOTE_NUM];
+    const char *server_host[MAX_REMOTE_NUM] = { 0 };
 
     char *nameservers[MAX_DNS_NUM + 1];
     int nameserver_num = 0;

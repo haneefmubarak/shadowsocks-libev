@@ -799,7 +799,7 @@ main(int argc, char **argv)
     char tmp_port[8];
 
     int remote_num = 0;
-    ss_addr_t remote_addr[MAX_REMOTE_NUM];
+    ss_addr_t remote_addr[MAX_REMOTE_NUM] = { 0 };
     char *remote_port = NULL;
 
     int option_index                    = 0;
